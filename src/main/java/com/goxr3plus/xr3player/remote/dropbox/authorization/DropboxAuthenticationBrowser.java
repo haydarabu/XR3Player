@@ -175,8 +175,10 @@ public class DropboxAuthenticationBrowser extends StackPane {
 	 */
 	public void showAuthenticationWindow() {
 		
+		
+		//---------------------NEED TO FIX PROBLEM HERE----------------------
 		//Clear the previous cookies
-		java.net.CookieHandler.setDefault(new com.sun.webkit.network.CookieManager());
+		//java.net.CookieHandler.setDefault(new com.sun.webkit.network.CookieManager());
 		
 		//Load it
 		webEngine.load(getAuthonticationRequestURL());
